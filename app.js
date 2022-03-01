@@ -10,7 +10,8 @@ function clear(){
 
 function boardSize(){
   let rows = parseInt(prompt('how many'));
-  makeRows(rows, rows);
+  if(rows>0){
+  makeRows(rows, rows);}
 };
 
 input_button_div.addEventListener('click',()=>{
